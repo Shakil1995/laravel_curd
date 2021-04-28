@@ -3,6 +3,10 @@
 use App\Http\Controllers\basicCurd;
 use App\Http\Controllers\queryBuilderController;
 use App\Http\Controllers\AggregatesController;
+use App\Http\Controllers\selectController;
+use App\Http\Controllers\margeController;
+use App\Http\Controllers\JoinController;
+use App\Http\Controllers\InsertController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -37,3 +41,19 @@ Route::get('/rowCount',[AggregatesController :: class,'countRow']);
 Route::get('/maxRow',[AggregatesController :: class,'maxRow']);
 Route::get('/minRow',[AggregatesController :: class,'minRow']);
 Route::get('/avgRow',[AggregatesController :: class,'avgRow']);
+//select Controller
+Route::get('/UniqueSelect',[selectController :: class,'UniqueSelect']);
+Route::get('/SingleColumnSelect',[selectController :: class,'SingleColumnSelect']);
+Route::get('/multiColumnSelect',[selectController :: class,'multiColumnSelect']);
+
+//merge Controller
+Route::get('/merge',[margeController :: class,'mergeData']);
+
+//Join Controller
+Route::get('/leftJoin',[JoinController :: class,'LeftJoinData']);
+Route::get('/rightJoin',[JoinController :: class,'RightJoinData']);
+
+//Insert Controller
+Route::get('/insertRow',[InsertController :: class,'insertRow']);
+Route::get('/insertMultiRow',[InsertController :: class,'insertMultiRow']);
+
