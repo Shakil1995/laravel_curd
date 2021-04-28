@@ -7,6 +7,8 @@ use App\Http\Controllers\selectController;
 use App\Http\Controllers\margeController;
 use App\Http\Controllers\JoinController;
 use App\Http\Controllers\InsertController;
+use App\Http\Controllers\deleteController;
+use App\Http\Controllers\UpdateController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -56,4 +58,10 @@ Route::get('/rightJoin',[JoinController :: class,'RightJoinData']);
 //Insert Controller
 Route::get('/insertRow',[InsertController :: class,'insertRow']);
 Route::get('/insertMultiRow',[InsertController :: class,'insertMultiRow']);
+
+//Delete Controller
+Route::get('/onDelete',[deleteController :: class,'onDelete']);
+
+//Update  Controller
+Route::get('/onUpdate',[UpdateController :: class,'onUpdate']);
 
