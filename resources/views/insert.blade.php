@@ -11,7 +11,7 @@
     <input type="text" name="" id="myName" placeholder="your name"> <br> <br>
     <input type="text" name="" id="myClass" placeholder="your class"> <br> <br>
     <input type="text" name="" id="myRoll" placeholder="your Roll"> <br> <br>
-    <button type="button" onclick="sendData()" > Insert</button>
+    <button type="button" onclick="sendData()" > Insert Update Rasel</button>
 
 
 
